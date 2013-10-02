@@ -1,0 +1,47 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Arbutus+Slab)
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans)
+
+$serif-font: Arbutus Slab // eqyptian (slab) serif
+$sans-serif-font: Quattrocento Sans // transitional sans-serif
+
+$base-font-size: 16px
+$base-line-height: $base-font-size * 1.5
++establish-baseline
+
+$color-base1: #0E53A7
+$color-base2: #4284D3
+$color-base3: #6899D3
+$color-base4: #FF9C00
+
+h1
+  font-family: $serif-font
+  $size: $base-font-size * 3
+  +adjust-font-size-to($size)
+  +trailer(2, $size)
+  +trailing-border(10px, 1, $size)
+  color: $color-base1
+
+h2
+  font-family: $serif-font
+  +adjust-font-size-to($base-font-size * 1.5)
+  color: $color-base2
+
+body
+  max-width: 475px
+  margin: auto
+
+#content
+  p
+    &:first-of-type
+      font-family: $serif-font
+
+    +leader(1)
+    +trailer(1)
+    font-family: $sans-serif-font
+
+footer
+  +adjust-font-size-to($base-font-size * 0.75)
