@@ -2,16 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import url(http://fonts.googleapis.com/css?family=Arbutus+Slab);
+
+$serif-font: Arbutus Slab; // eqyptian serif
+$sans-serif-font: sans-serif; // transitional sans-serif
+
 h1 {
-  font-family: serif;
+  font-family: $serif-font;
 }
 
 #content {
-  p:first-of-type {
-    font-family: serif;
-  }
-
   p {
-    font-family: sans-serif;
+    &:first-of-type {
+      font-family: $serif-font;
+    }
+
+    font-family: $sans-serif-font;
   }
 }
