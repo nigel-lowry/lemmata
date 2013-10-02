@@ -19,10 +19,10 @@ $color-base4: #FF9C00;
 
 h1 {
   font-family: $serif-font;
-  $h1-font-size: $base-font-size * 3;
-  @include adjust-font-size-to($h1-font-size);
-  @include trailer(2, $h1-font-size);
-  @include trailing-border(10px, 1, $h1-font-size);
+  $size: $base-font-size * 3;
+  @include adjust-font-size-to($size);
+  @include trailer(2, $size);
+  @include trailing-border(10px, 1, $size);
   color: $color-base1;
 }
 
