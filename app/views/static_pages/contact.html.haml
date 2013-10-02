@@ -1,2 +1,4 @@
 %h1 StaticPages#contact
-%p Find me in app/views/static_pages/contact.html.haml
+%p
+  Find me in app/views/static_pages/contact.html.haml
+  = mail_to("foo@lemmata.co.uk", "Contact Us", subject: "Contact Us", encode: "javascript")
