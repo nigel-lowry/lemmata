@@ -1,4 +1,5 @@
-%h1 StaticPages#contact
+%h1 Contact
 %p
-  Find me in app/views/static_pages/contact.html.haml
-  = mail_to("foo@lemmata.co.uk", "Contact Us", subject: "Contact Us", encode: "javascript")
+  It's best to contact us by
+  = succeed '.' do
+    = mail_to("nigel@lemmata.co.uk", "e-mail", subject: "Contact through Web site", encode: "javascript")
