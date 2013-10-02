@@ -3,9 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import url(http://fonts.googleapis.com/css?family=Arbutus+Slab);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
 
-$serif-font: Arbutus Slab; // eqyptian serif
-$sans-serif-font: sans-serif; // transitional sans-serif
+$serif-font: Arbutus Slab; // eqyptian (slab) serif
+$sans-serif-font: Quattrocento Sans; // transitional sans-serif
 
 h1 {
   font-family: $serif-font;
