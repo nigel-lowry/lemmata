@@ -32,6 +32,11 @@ h2 {
   color: $color-base2;
 }
 
+body {
+  max-width: 475px;
+  margin: auto;
+}
+
 #content {
   p {
     &:first-of-type {
