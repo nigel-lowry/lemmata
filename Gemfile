@@ -46,3 +46,4 @@ end
 
 gem 'haml'
 gem 'actionview-encoded_mail_to'
+gem 'compass-rails', '~> 2.0.alpha.0'
