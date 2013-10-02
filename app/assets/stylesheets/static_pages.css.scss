@@ -8,7 +8,9 @@
 $serif-font: Arbutus Slab; // eqyptian (slab) serif
 $sans-serif-font: Quattrocento Sans; // transitional sans-serif
 
-$body-font-size: 16px;
+$base-font-size: 16px;
+$base-line-height: $base-font-size * 1.5;
+@include establish-baseline;
 
 $color-base1: #0E53A7;
 $color-base2: #4284D3;
@@ -17,19 +19,17 @@ $color-base4: #FF9C00;
 
 h1 {
   font-family: $serif-font;
-  font-size: $body-font-size * 3;
+  $h1-font-size: $base-font-size * 3;
+  @include adjust-font-size-to($h1-font-size);
+  @include trailer(2, $h1-font-size);
+  @include trailing-border(10px, 1, $h1-font-size);
   color: $color-base1;
 }
 
 h2 {
   font-family: $serif-font;
-  font-size: $body-font-size * 1.5;
+  @include adjust-font-size-to($base-font-size * 1.5);
   color: $color-base2;
-}
-
-body {
-  font-size: $body-font-size;
-  line-height: 1.5;
 }
 
 #content {
@@ -38,10 +38,12 @@ body {
       font-family: $serif-font;
     }
 
+    @include leader(1);
+    @include trailer(1);
     font-family: $sans-serif-font;
   }
 }
 
 footer {
-  font-size: $body-font-size * 0.75;
+  @include adjust-font-size-to($base-font-size * 0.75);
 }
