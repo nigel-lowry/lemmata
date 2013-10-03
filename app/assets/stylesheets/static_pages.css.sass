@@ -50,6 +50,13 @@ cite
 
 #main-nav
   +horizontal-list
+  a
+    text-decoration: none
+    +transition-property(color)
+    +transition-duration(0.4s)
+    +transition-timing-function(ease-in-out)
+    &:hover
+      color: $color-base4
 
 ul.prose
   list-style-type: circle
