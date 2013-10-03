@@ -51,10 +51,13 @@ cite
 #main-nav
   +horizontal-list
 
-ul.prose li
-  &:after
-    content: ';'
-  &:nth-last-child(2):after
-    content: '; and'
-  &:last-child:after
-    content: '.'
+ul.prose
+  list-style-type: circle
+  list-style-position: inside
+  li
+    &:after
+      content: ';'
+    &:nth-last-child(2):after
+      content: '; and'
+    &:last-child:after
+      content: '.'
