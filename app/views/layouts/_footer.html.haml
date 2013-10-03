@@ -1,7 +1,5 @@
 %footer#page_footer
   %p
     &copy;
-    2008
-    &ndash;
-    = Time.zone.now.year
-    , Lemmata
+    = surround '2008', "#{Time.zone.now.year}, Lemmata" do
+      &ndash;
