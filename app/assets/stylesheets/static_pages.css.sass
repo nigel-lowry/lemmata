@@ -18,12 +18,16 @@ $color-base3: #6899D3
 $color-base4: #FF9C00
 
 h1
+  color: $color-base1
   font-family: $serif-font
   $size: $base-font-size * 3
   +adjust-font-size-to($size)
   +trailer(2, $size)
   +trailing-border(10px, 1, $size)
-  color: $color-base1
+  $default-text-shadow-color: $color-base3
+  $default-text-shadow-blur: 3px
+  $default-text-shadow-v-offset: 1px
+  +single-text-shadow
 
 h2
   font-family: $serif-font
