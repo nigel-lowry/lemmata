@@ -39,7 +39,7 @@ h2
 
 body
   font-family: $sans-serif-font
-  max-width: 400px // 350px=50 characters, 450px=65 characters
+  max-width: 400px // 350px=50 characters, 450px=65 characters, ideally 50--70
   margin: auto
 
 #content
@@ -75,3 +75,14 @@ ul.prose
       content: '; and'
     &:last-child:after
       content: '.'
+
+// want 40--45 characters/line on smaller devices
+@media screen and (max-width: 640px)
+  body
+    +adjust-font-size-to(26px)
+    max-width: 75%
+
+@media screen and (max-width: 480px)
+  body
+    +adjust-font-size-to(20px)
+    max-width: 89%
