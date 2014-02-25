@@ -1,8 +1,16 @@
+/ Nav Bar
 %header#page_header{role: 'banner'}
   %nav#main-nav{role: 'navigation'}
-    %ul
-      %li= link_to 'Home', root_path
-      %li= link_to 'What we do', what_path
-      %li= link_to 'Who we are', who_path
-      %li= link_to 'Clients', clients_path
-      %li= link_to 'Contact', contact_path
+    .row
+      .large-12.columns
+        .nav-bar.right
+          %ul.button-group
+            %li= link_to 'Home', root_path, class: 'button'
+            %li= link_to 'What we do', what_path, class: 'button'
+            %li= link_to 'Who we are', who_path, class: 'button'
+            %li= link_to 'Clients', clients_path, class: 'button'
+            %li= link_to 'Contact', contact_path, class: 'button'
+        %h1
+          Lemmata
+          %small A UK-based Agile consultancy
+        %hr/
