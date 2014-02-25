@@ -8,3 +8,9 @@
   = succeed ';' do
     = mail_to("nigel@lemmata.co.uk", "e-mail", subject: "Contact through Web site", encode: "javascript")
   we promise to always reply promptly.
+
+.row
+  .large-6.columns
+    = render 'layouts/registered_office'
+  .large-6.columns
+    = render 'layouts/registered_address'
