@@ -15,10 +15,7 @@
   %body
     = render 'layouts/header'
     .row
-      .large-6.columns
+      .large-12.columns
         %section#content= yield
-      .large-6.columns
-        = render 'layouts/registered_office'
-        = render 'layouts/registered_address'
       = render 'layouts/footer'
       = javascript_include_tag "application"
