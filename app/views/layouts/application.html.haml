@@ -14,7 +14,8 @@
     = csrf_meta_tags
   %body
     = render 'layouts/header'
-    .container
-      %section#content= yield
+    .row
+      .large-12.columns
+        %section#content= yield
     = render 'layouts/footer'
     = javascript_include_tag "application"
