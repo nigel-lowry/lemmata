@@ -1,8 +1,16 @@
 %header#page_header{role: 'banner'}
-  %nav#main-nav{role: 'navigation'}
-    %ul
-      %li= link_to 'Home', root_path
-      %li= link_to 'What we do', what_path
-      %li= link_to 'Who we are', who_path
-      %li= link_to 'Clients', clients_path
-      %li= link_to 'Contact', contact_path
+  %nav.top-bar#main-nav{"data-topbar" => "", "role" => "navigation"}
+    %ul.title-area
+      %li.name
+        %h1
+          %a{href: root_path} Lemmata
+      %li.toggle-topbar.menu-icon
+        %a{href: "#"} Menu
+    %section.top-bar-section
+      / Right Nav Section
+      %ul.right
+        %li= link_to 'About us', root_path
+        %li= link_to 'What we do', what_path
+        %li= link_to 'Who we are', who_path
+        %li= link_to 'Clients', clients_path
+        %li= link_to 'Contact', contact_path
