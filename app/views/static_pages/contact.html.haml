@@ -1,5 +1,5 @@
 - content_for(:title) { 'Contact' }
-%h1 Contact
+%h3 Contact
 %p
   Please contact us for an informal&mdash;and without commitment&mdash;conversation regarding your specific
   product requirements.
@@ -8,3 +8,9 @@
   = succeed ';' do
     = mail_to("nigel@lemmata.co.uk", "e-mail", subject: "Contact through Web site", encode: "javascript")
   we promise to always reply promptly.
+
+.row
+  .large-6.columns
+    = render 'layouts/registered_office'
+  .large-6.columns
+    = render 'layouts/registered_address'
