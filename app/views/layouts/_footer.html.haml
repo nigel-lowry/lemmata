@@ -1,7 +1,13 @@
-%footer#page_footer
-  %hr/
-  %small
-    &copy;#{Years.range(2008)}, Lemmata Ltd
-    is a company registered in England and Wales.
-    Registered number: 06731292.
-    VAT registration number: 941 4450 37.
+%footer.row#page_footer
+  .large-12.columns
+    %hr/
+    .row
+      .large-4.columns
+        %small
+          &copy;#{Years.range(2008)}, Lemmata Ltd
+          is a company registered in England and Wales.
+          Registered number: 06731292.
+          VAT registration number: 941 4450 37.
+      .large-8.columns
+        %ul.inline-list.right
+          = render 'layouts/links'
