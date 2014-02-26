@@ -7,8 +7,4 @@
     %section.top-bar-section
       / Right Nav Section
       %ul.right
-        %li= link_to 'About us', root_path
-        %li= link_to 'What we do', what_path
-        %li= link_to 'Who we are', who_path
-        %li= link_to 'Clients', clients_path
-        %li= link_to 'Contact', contact_path
+        = render 'layouts/links'
