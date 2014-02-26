@@ -1120,6 +1120,11 @@ $header-font-family: $serif-font;
 // $tooltip-rounded: $global-rounded;
 // $tooltip-pip-size: 5px;
 
+$color-base1: #0E53A7;
+$color-base2: #4284D3;
+$color-base3: #6899D3;
+$color-base4: #FF9C00;
+
 //
 // TOP BAR
 //
@@ -1127,7 +1132,7 @@ $header-font-family: $serif-font;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+$topbar-bg-color: $color-base1;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1155,7 +1160,7 @@ $header-font-family: $serif-font;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg-hover: #272727  ;
+$topbar-link-bg-hover: $color-base2;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
