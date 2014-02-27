@@ -2,15 +2,9 @@
   %nav.top-bar#main-nav{"data-topbar" => "", "role" => "navigation"}
     %ul.title-area
       %li.name
-        %h1
-          %a{href: "#"} Lemmata
-      %li.toggle-topbar.menu-icon
-        %a{href: "#"} Menu
+        %h1= link_to 'Lemmata', '#'
+      %li.toggle-topbar.menu-icon= link_to 'Menu', '#'
     %section.top-bar-section
       / Right Nav Section
       %ul.right
-        %li= link_to 'About us', root_path
-        %li= link_to 'What we do', what_path
-        %li= link_to 'Who we are', who_path
-        %li= link_to 'Clients', clients_path
-        %li= link_to 'Contact', contact_path
+        = render 'layouts/links'
