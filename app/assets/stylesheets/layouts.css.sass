@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$default-text-shadow-color: #000
+$default-text-shadow-h-offset: 1px
+$default-text-shadow-v-offset: 2px
+
+h1
+  +single-text-shadow
+
 #content
   p
     &:first-of-type
