@@ -50,6 +50,6 @@ end
 
 gem 'haml-rails'
 gem 'actionview-encoded_mail_to'
-gem 'compass-rails', '~> 1.1.2'
+gem 'compass-rails', '~> 2.0.0'
 gem 'foundation-rails', '~> 5.3.3.0'
 gem 'years'
