@@ -3,7 +3,7 @@ ruby '2.1.0'
 #ruby-gemset=lemmata
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.3'
+gem 'rails', '4.0.6'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
