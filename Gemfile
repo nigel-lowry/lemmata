@@ -48,7 +48,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'haml'
+gem 'haml-rails'
 gem 'actionview-encoded_mail_to'
 gem 'compass-rails', '~> 1.1.2'
 gem 'foundation-rails'
