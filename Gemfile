@@ -4,7 +4,7 @@ ruby '2.1.7'
 gem 'puma'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.6'
+gem 'rails', '4.0.13'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
